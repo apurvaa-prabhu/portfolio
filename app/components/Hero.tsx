@@ -103,7 +103,7 @@ export default function Hero() {
           maxWidth: 440, marginBottom: 44,
           fontFamily: "var(--font-geist, sans-serif)",
         }}>
-          I&apos;m a final-year CS student at UMass Boston, originally from{" "}
+          I&apos;m a CS graduate from UMass Boston, originally from{" "}
           <strong style={{ fontWeight: 500, color: "var(--ink)" }}>India</strong>, building things
           at the intersection of{" "}
           <strong style={{ fontWeight: 500, color: "var(--ink)" }}>AI, full-stack, and civic tech</strong>.
