@@ -39,6 +39,7 @@ export default function Nav() {
 
       <ul style={{ display: "flex", gap: 36, listStyle: "none", margin: 0, padding: 0, alignItems: "center" }}>
         <li><a href="#about"    onClick={scrollTo("about")}    className="nav-link">About</a></li>
+        <li><a href="#research" onClick={scrollTo("research")} className="nav-link">Research</a></li>
         <li><a href="#projects" onClick={scrollTo("projects")} className="nav-link">Projects</a></li>
         <li><a href="#skills"   onClick={scrollTo("skills")}   className="nav-link">Skills</a></li>
         <li><Link href="/contact" className="nav-cta">Say hello</Link></li>

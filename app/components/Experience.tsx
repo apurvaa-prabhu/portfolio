@@ -29,8 +29,7 @@ export default function Experience() {
         padding: "100px 52px", maxWidth: 1100, margin: "0 auto",
         borderTop: "1px solid var(--paper3)",
         display: "grid", gridTemplateColumns: "1fr 2fr", gap: 80, alignItems: "start",
-      }}
-    >
+      }}>
       <div style={{ position: "sticky", top: 80 }}>
         <div ref={r} style={{
           fontFamily: "var(--font-geist-mono, monospace)",
@@ -40,7 +39,7 @@ export default function Experience() {
           Experience
         </div>
         <p ref={r} style={{ fontSize: 13, color: "var(--warm-mid)", lineHeight: 1.6, fontFamily: "var(--font-geist, sans-serif)" }}>
-          A mix of technical projects, team operations, and the kind of real-world accountability you don&apos;t get in a classroom.
+          A mix of technical consulting, team operations, and the kind of real-world accountability you don&apos;t get in a classroom.
         </p>
       </div>
 
@@ -48,7 +47,6 @@ export default function Experience() {
         <div ref={r} style={{
           padding: "32px 0",
           borderTop: "1px solid var(--paper3)",
-          borderBottom: "1px solid var(--paper3)",
         }}>
           <div style={{
             display: "flex", justifyContent: "space-between",
@@ -56,7 +54,57 @@ export default function Experience() {
             fontSize: 11, color: "var(--warm-mid)",
             letterSpacing: "0.08em", marginBottom: 10,
           }}>
-            <span>Jan 2023 — Present</span>
+            <span>Sept 2026 — Present</span>
+            <span>Remote</span>
+          </div>
+
+          <div style={{
+            fontFamily: "var(--font-fraunces, serif)",
+            fontSize: 20, fontWeight: 300, color: "var(--ink)",
+            marginBottom: 4, letterSpacing: "-0.01em",
+          }}>
+            Technology &amp; E-Commerce Consultant
+          </div>
+
+          <div style={{
+            fontSize: 13, color: "var(--accent)",
+            fontFamily: "var(--font-geist-mono, monospace)",
+            letterSpacing: "0.04em", marginBottom: 12,
+          }}>
+            Tripura Sundari
+          </div>
+
+          <p style={{ fontSize: 14, color: "#5A5750", lineHeight: 1.7, fontFamily: "var(--font-geist, sans-serif)" }}>
+            Supporting implementation and maintenance of an e-commerce storefront on Shopify — managing product data,
+            digital content structure, and storefront workflows. Producing AI-generated product imagery to create diverse
+            model representations for saree listings, and contributing to a custom business application to streamline
+            operations and customer workflows.
+          </p>
+
+          <div style={{
+            display: "inline-flex", alignItems: "center", gap: 5,
+            fontSize: 11, fontFamily: "var(--font-geist-mono, monospace)",
+            color: "var(--warm-mid)", background: "var(--paper2)",
+            padding: "3px 10px", borderRadius: 100, marginTop: 10,
+          }}>
+            ⚡ E-Commerce · Shopify · Volunteer
+          </div>
+        </div>
+
+        <div ref={r} style={{
+          padding: "32px 0",
+          borderTop: "1px solid var(--paper3)",
+          borderBottom: "1px solid var(--paper3)",
+        }}>
+
+        </div>
+          <div style={{
+            display: "flex", justifyContent: "space-between",
+            fontFamily: "var(--font-geist-mono, monospace)",
+            fontSize: 11, color: "var(--warm-mid)",
+            letterSpacing: "0.08em", marginBottom: 10,
+          }}>
+            <span>Jan 2023 — May 2026</span>
             <span>UMass Boston</span>
           </div>
 
@@ -88,10 +136,9 @@ export default function Experience() {
             color: "var(--warm-mid)", background: "var(--paper2)",
             padding: "3px 10px", borderRadius: 100, marginTop: 10,
           }}>
-            ⚡ Operations · Leadership · 3+ years
+            ⚡ Operations · Leadership · Jan 2023 – May 2026
           </div>
         </div>
-      </div>
     </section>
   );
 }

@@ -3,10 +3,10 @@
 import { useEffect, useRef } from "react";
 
 const zones = [
-  { label: "// Languages",    title: "I write in",  chips: ["Python", "Java", "C++", "JavaScript", "C#", "SQL", "Bash"] },
-  { label: "// Frameworks",   title: "I build with", chips: ["React", "Next.js", "Node.js", "FastAPI", "Spring Boot", ".NET"] },
-  { label: "// AI / ML",      title: "I think in",  chips: ["Deep Learning", "Computer Vision", "Transfer Learning", "RAG", "Gemini API", "Prompt Eng."] },
-  { label: "// Infra & Cloud",title: "I deploy on", chips: ["GCP", "AWS", "Azure", "Docker", "Kubernetes", "PostgreSQL", "CI/CD"] },
+  { label: "// Languages",    title: "I write in",  chips: ["Python", "JavaScript", "Java", "C++", "C#", "SQL", "Bash"] },
+  { label: "// Frameworks",   title: "I build with", chips: ["React", "Next.js", "FastAPI", "Node.js", "Three.js", "React Native", "Spring Boot"] },
+  { label: "// AI / ML",      title: "I think in",  chips: ["LLMs", "PyTorch", "HuggingFace", "PEFT (LoRA)", "Computer Vision", "RAG", "Gemini API", "Prompt Eng."] },
+  { label: "// Infra & Data", title: "I deploy on", chips: ["GCP", "AWS", "Docker", "Kubernetes", "PostgreSQL", "MongoDB", "Slurm (HPC)", "CI/CD"] },
 ];
 
 function useReveal() {

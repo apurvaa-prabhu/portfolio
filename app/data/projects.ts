@@ -38,7 +38,7 @@ export const projects: Project[] = [
   {
     slug: "mapping-for-good",
     num: "02",
-    award: "CivicHacks 2026 — Original Research Award",
+    award: "CivicHacks 2026 — Original Research Award (MLH)",
     name: "Mapping for Good",
     tagline: "Boston Food Ecosystem & Equity Platform",
     story:
@@ -49,7 +49,7 @@ export const projects: Project[] = [
       "A key challenge was building data pipelines that could handle inconsistent formats, missing values, and mismatched geographic identifiers across datasets — normalized into a unified geospatial schema that the visualization layer could reliably query.",
       "The frontend was built to be genuinely interactive — users can toggle layers, zoom to neighborhoods, and explore specific data points. Every visualization choice was made to surface insight, not to show off.",
     ],
-    stack: ["JavaScript", "Geospatial Analysis", "Data Visualization", "Boston Open Data", "American Community Survey"],
+    stack: ["JavaScript", "Google Maps API", "Gemini API", "MongoDB", "Boston Open Data", "Data Visualization"],
     devpost: "https://devpost.com",
     highlights: [
       "Won Original Research Award at CivicHacks 2026",
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     name: "AI Skin Analysis System",
     tagline: "Deep Learning Pipeline for Multi-Attribute Skin Analysis",
     story:
-      "A deep learning pipeline for multi-attribute skin analysis from facial images. The project involved fine-tuning MobileNetV2 using transfer learning, optimizing validation performance, and building a FastAPI backend with RESTful endpoints for real-time inference.",
+      "A deep learning pipeline for multi-attribute skin analysis from facial images. Fine-tuned MobileNetV2 for multi-label classification of 11 skin attributes across 10,632 images — achieving 85.47% validation accuracy in 10 epochs with trainable parameters reduced by 99.4%.",
     detail: [
       "The goal was to build a model that could analyze multiple skin attributes simultaneously — tone, texture, and condition — from a single facial image, and serve predictions fast enough for real-time use.",
       "MobileNetV2 was chosen as the base architecture for its efficiency — designed to run well on constrained hardware, which matters for eventual mobile deployment. Fine-tuning with transfer learning made it possible to adapt the model to the domain without needing a massive labeled dataset.",
@@ -73,31 +73,31 @@ export const projects: Project[] = [
     ],
     stack: ["Python", "PyTorch", "MobileNetV2", "Transfer Learning", "FastAPI", "REST APIs"],
     highlights: [
-      "Fine-tuned MobileNetV2 for multi-attribute skin classification",
-      "Transfer learning approach — no large labeled dataset required",
-      "FastAPI backend with RESTful inference endpoints",
-      "Lightweight architecture suitable for mobile deployment",
+      "85.47% validation accuracy across 11 skin attributes in 10 epochs",
+      "99.4% reduction in trainable parameters via selective layer freezing",
+      "Fine-tuned on 10,632 images with train/val gap under 0.3%",
+      "Modular FastAPI backend with real-time CPU inference endpoints",
     ],
   },
   {
-    slug: "inia-biosciences",
+    slug: "memory-museum",
     num: "04",
-    name: "INIA Biosciences",
-    tagline: "Research Website",
+    name: "Memory Museum",
+    tagline: "Interactive 3D Memory Gallery",
     story:
-      "Built a responsive research website as part of an Agile Scrum team. The work included dynamic search functionality, CMS integration via Sanity, and resolving cross-browser UI inconsistencies. Research labs deserve good software too.",
+      "An interactive 360° 3D memory gallery built with Three.js and WebGL. Images are programmatically positioned along a circular path using trigonometric calculations, with momentum-based drag rotation, velocity decay, keyboard navigation, and raycasting for selectable memory objects with contextual lightbox experiences.",
     detail: [
-      "INIA Biosciences needed a web presence that matched the quality of their scientific work. The team worked in an Agile Scrum setup — sprint planning, code reviews, and iterative delivery throughout.",
-      "The dynamic search functionality needed to work across publications, team members, and research areas simultaneously, with results updating in real time as users typed — one of the more technically interesting parts of the project.",
-      "Content management was handled via Sanity CMS, giving the research team a clean interface to update their own content without needing engineering support. This involved setting up schemas and integrating the data layer with the Next.js frontend.",
-      "Cross-browser compatibility required more work than expected — Safari, Firefox, and Chrome each had quirks that needed specific handling, and fixes were documented to help the team maintain consistency going forward.",
+      "Memory Museum is a 3D interactive gallery that lets you walk through memories spatially — each photo placed along a circular path in a fully navigable 360° environment built entirely in the browser using Three.js and WebGL.",
+      "The positioning system uses trigonometric calculations to place image objects evenly along the circular path, with momentum-based drag rotation and velocity decay that makes navigation feel physical and natural. Keyboard navigation was added for accessibility.",
+      "Three.js raycasting handles click detection in 3D space — when you select a memory object, it opens a contextual lightbox experience. This required mapping 2D mouse coordinates back into 3D ray intersections against the scene geometry.",
+      "The visual atmosphere is driven by custom GLSL vertex and fragment shaders rendering an animated two-layer particle system with 250,000+ particles and mouse-responsive visual effects. Everything runs on the GPU via WebGL, keeping performance smooth despite the particle density.",
     ],
-    stack: ["Next.js", "React", "Tailwind CSS", "Sanity CMS", "TypeScript", "Agile / Scrum"],
+    stack: ["JavaScript", "Three.js", "WebGL", "GLSL", "Raycasting", "Particle Systems"],
     highlights: [
-      "Delivered in Agile Scrum team with regular sprint cycles",
-      "Dynamic real-time search across multiple content types",
-      "Sanity CMS integration for non-technical content editors",
-      "Cross-browser compatibility across Safari, Chrome, and Firefox",
+      "360° interactive 3D environment built entirely in the browser",
+      "250,000+ particle system rendered via custom GLSL shaders",
+      "Momentum-based drag rotation with velocity decay",
+      "Three.js raycasting for precise 3D object selection",
     ],
   },
 ];
